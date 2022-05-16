@@ -1,0 +1,8 @@
+<!-- random grid -->
+<p><%= @new %></p>
+<form action="/score" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= hidden_field_tag :letters, @new %>
+  <input type="text" name="word" placeholder="Insert longest word">
+  <input type="submit">
+</form>
